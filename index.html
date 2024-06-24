@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unsplash API Project</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+        }
+
+        .image-container {
+            width: 100%;
+            height: 100%;
+            /* overflow: hidden; */
+            display: flex;
+            flex-wrap: wrap;
+            height: 2000px;
+        }
+
+        .image-container img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            position: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="image-container" class="image-container"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script type="module" src="script.js"></script>
+
+</body>
+
+</html>
